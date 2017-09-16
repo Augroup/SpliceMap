@@ -9,7 +9,8 @@ The docker image comes with a small example data.  You can access this and run t
 ```bash
 $ docker run -v $(pwd)/output:/Source/SpliceMap/example/output \
              -v $(pwd)/temp:/Source/SpliceMap/example/temp \
-             -w /Source/SpliceMap/example smtest runSpliceMap run.cfg
+             -w /Source/SpliceMap/example \
+             vacation/SpliceMap runSpliceMap run.cfg
 ```
 
 #### Running the command on your data:
