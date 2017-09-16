@@ -7,7 +7,9 @@ A fork of Standford's SpliceMap -- Copyright (c) 2010 Kin Fai Au and John Chong 
 The docker image comes with a small example data.  You can access this and run the command on the example which will create an `output` folder and a `temp` folder in your current directory.
 
 ```bash
-$ docker run -v $(pwd)/output:/Source/SpliceMap/example/output -v $(pwd)/temp:/Source/SpliceMap/example/temp -w /Source/SpliceMap/example smtest runSpliceMap run.cfg
+$ docker run -v $(pwd)/output:/Source/SpliceMap/example/output \
+             -v $(pwd)/temp:/Source/SpliceMap/example/temp \
+             -w /Source/SpliceMap/example smtest runSpliceMap run.cfg
 ```
 
 #### Running the command on your data:
