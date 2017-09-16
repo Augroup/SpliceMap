@@ -10,7 +10,7 @@ The docker image comes with a small example data.  You can access this and run t
 $ docker run -v $(pwd)/output:/Source/SpliceMap/example/output \
              -v $(pwd)/temp:/Source/SpliceMap/example/temp \
              -w /Source/SpliceMap/example \
-             vacation/SpliceMap runSpliceMap run.cfg
+             vacation/splicemap runSpliceMap run.cfg
 ```
 
 #### Running the command on your data:
@@ -22,5 +22,5 @@ https://github.com/jason-weirather/SpliceMap/tree/master/example
 And from within your working directory you can call splicemap on your `run.cfg` file like so:
 
 ```bash
-$ docker run -v $(pwd):/home vacation/SpliceMap runSpliceMap run.cfg
+$ docker run -v $(pwd):/home vacation/splicemap runSpliceMap run.cfg
 ```
