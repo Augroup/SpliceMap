@@ -1,0 +1,35 @@
+== SpliceMap Installation ==
+
+No installation is required if you do not wish to rebuild the binaries.
+Simply copy the binaries (in the "bin" folder) to a directory of your choice.
+
+Please see the website for tutorials and manuals
+
+http://www-stat.stanford.edu/~kinfai/SpliceMap/
+
+--
+
+If you are having troubles running SpliceMap on your machine due to 
+incompatible libraries, you will need to build it from source.
+Fortunately, this pain free!
+
+Go to the "src" directory and type "./install.sh <output_dir>".
+the binaries (64-bit) will be built and copied to the <output_dir>. 
+Any existing files will be overwritten. 
+
+If you also need to build Bowtie, 
+Go to the "src" directory and type "./install-bowtie.sh <output_dir>".
+
+For the 32-bit version use "./install-32.sh <output_dir>" and 
+"./install-bowtie-32.sh <output_dir>".
+
+If the above command fails. Try "chmod +x *.sh" then try the above step again. 
+
+--
+
+If you need to rebuild Eland, please contact us at kinfai@stanford.edu
+
+If you need to rebuild SeqMap, see http://biogibbs.stanford.edu/~jiangh/seqmap/
+After building copy "seqmap" to the same directory as the SpliceMap binaries. 
+
+
