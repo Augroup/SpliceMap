@@ -18,3 +18,9 @@ ENV REPO https://github.com/jason-weirather/SpliceMap.git
 RUN git clone $REPO /Source/SpliceMap \
     && cd /Source/SpliceMap \
     && cp /Source/SpliceMap/bin/* /usr/local/bin/
+
+VOLUME /temp
+VOLUME /output
+VOLUME /home
+ENV HOME /home
+WORKDIR /home
